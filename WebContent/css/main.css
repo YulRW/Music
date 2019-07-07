@@ -1,0 +1,958 @@
+        /* 主页CSS样式 */
+        /* ################################################################################################# */
+
+
+
+        /* ########################################顶部导航栏############################################### */
+        #top_1 {
+            /* background-image: url(../images/header.png); */
+            height: 70px;
+            padding: 4px;
+            border-bottom: 4px solid black;
+
+            font-weight: bold;
+        }
+
+        #top_1 div {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        #top_1 ul li a {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #top_1 div ul li:first-child {
+            width: 176px;
+            height: 70px;
+            background: url(../images/qg云音乐logo.png) no-repeat;
+            padding: 0;
+
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        #top_1 li {
+            display: inline-block;
+
+            padding: 5px 26px;
+
+            vertical-align: middle;
+        }
+
+
+        #user a {
+            display: inline-block;
+        }
+
+        #user img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .page_li_style {
+            border-top: rgb(52, 134, 56) solid 4px;
+            border-bottom: rgb(52, 134, 56) solid 4px;
+
+        }
+
+        .page_div:not(:first-child) {
+            display: none;
+        }
+
+        /* ########################################主页开头############################################## */
+        #main_1 {
+            height: 700px;
+            background-image: url(../images/main.jpg);
+            background-size: 1080px 1080px;
+        }
+
+        #rotation_chart {
+            width: 1200px;
+            padding: 100px 0 0 0;
+            margin: 0 auto;
+        }
+
+        #main_rotation_chart {
+            position: relative;
+            overflow: hidden;
+
+            width: 1200px;
+            height: 370px;
+        }
+
+        #main_1 ul {
+            position: relative;
+
+            width: 100%;
+            height: 100%;
+        }
+
+        #main_1 ul li {
+            display: inline-block;
+            position: absolute;
+
+            cursor: pointer;
+        }
+
+        #main_1 ul li img {
+            width: 730px;
+            border: 4px solid black;
+        }
+
+
+        .list1 {
+            transform: translateX(-700px) scale(0.8);
+            transform-origin: 0 100%;
+        }
+
+
+        .list2 {
+            transform: translateX(-600px) scale(0.8);
+            transform-origin: 0 100%;
+            transition: all .5s;
+        }
+
+
+
+        .list3 {
+            z-index: 1;
+
+            transform: translateX(0) scale(0.8);
+            transform-origin: 0 100%;
+            transition: all .5s;
+        }
+
+
+
+        .list4 {
+            z-index: 2;
+
+            transform: translateX(235px);
+            transition: all .5s;
+        }
+
+
+
+
+        .list5 {
+            z-index: 1;
+
+            transform: translateX(460px) scale(0.8);
+            transform-origin: 100% 100%;
+            transition: all .5s;
+        }
+
+
+
+
+        .list6 {
+            transform: translateX(1060px) scale(0.8);
+            transform-origin: 100% 100%;
+            transition: all .5s;
+        }
+
+        .list7 {
+            transform: translateX(1170px) scale(0.8);
+            transform-origin: 100% 100%;
+        }
+
+
+
+        #rotation_chart_btn {
+            width: 100%;
+            height: 40px;
+            
+            text-align: center;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+
+
+        #btn_RC{
+            position: absolute;
+        }
+
+        #main_1 span {
+            display: inline-block;
+
+            width: 35px;
+            height: 10px;
+            background: grey;
+            padding: 0 10px;
+            margin: 0 2px;
+            border: 4px solid black;
+
+            cursor: pointer;
+        }
+
+        /* ########################################搜索框############################################### */
+        #search {
+            position: relative;
+            top: -67px;
+
+            width: 880px;
+            margin: 0 auto;
+
+        }
+
+        #search_1 {
+            position: relative;
+
+            width: 880px;
+            height: 130px;
+            border: #000 solid 6px;
+            background: white;
+        }
+
+        #search_1>div {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+
+            width: 700px;
+            height: 102px;
+            margin: auto;
+        }
+
+
+        #search_1 input {
+            display: inline-block;
+
+            width: 585px;
+            height: 100px;
+            border: #000 solid 4px;
+            border: none;
+
+            font-size: 75px;
+
+            outline: none;
+        }
+
+        #search_1_run {
+            display: inline-block;
+            position: relative;
+
+            cursor: pointer;
+
+        }
+
+        #search_1_run:hover {
+            bottom: 5px;
+
+        }
+
+        #search_1_run>img {
+            width: 50px;
+        }
+
+        #search_recommend {
+            z-index: 2;
+            display: none;
+            position: absolute;
+            overflow: auto;
+
+            width: 880px;
+            height: 400px;
+            background: white;
+            border: #000 solid 6px;
+            border-top: none;
+        }
+
+        #btm_bg {
+            height: 6px;
+            background-image: url(../images/border-bottom.svg);
+        }
+
+        #top_bg {
+            display: none;
+
+            height: 6px;
+            background-image: url(../images/border-top.svg);
+        }
+
+        #search_music {
+            width: 100%;
+        }
+
+
+        #search_context {
+            overflow: hidden;
+
+            width: 100%;
+            height: 350px;
+        }
+
+
+        #search_button {
+            margin: 14px 0;
+
+            text-align: center;
+        }
+
+
+        #search_button span {
+            display: inline-block;
+
+            width: 10px;
+            height: 10px;
+            background: darkgray;
+            border: 4px solid black;
+            margin: 0 5px;
+            
+            cursor: pointer;
+            /* border-radius: 50%; */
+        }
+
+        #search_context ul {
+            position: relative;
+            top: 40px;
+
+            height: 300px;
+        }
+
+        #search_context ul li {
+            display: inline-block;
+        }
+
+        #search_context ul li img {
+            width: 200px;
+        }
+
+        .s_list1 {
+            position: absolute;
+            left: -100px;
+
+            transition: all .5s;
+        }
+
+        .s_list2 {
+            position: absolute;
+            left: 340px;
+
+            transition: all .5s;
+        }
+
+        .s_list3 {
+            position: absolute;
+            left: 780px;
+
+            transition: all .5s;
+        }
+
+        .s_list4 {
+            position: absolute;
+            left: 1080px;
+        }
+
+        #RC_L {
+            z-index: 3;
+            position: absolute;
+            bottom: -15px;
+            left: -182px;
+
+            cursor: pointer;
+        }
+
+        #RC_R {
+            z-index: 3;
+            position: absolute;
+            bottom: -15px;
+            left: 1139px;
+
+            cursor: pointer;
+        }
+
+
+        .search_resource{
+            display: inline-block;
+
+            width: 215px;
+            margin: 10px 0 ;
+
+            text-align: center;
+        }
+
+        .search_resource img:first-child+div{
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+
+
+
+
+        /* ############################################主页样式############################################### */
+        .content_1 ul li {
+            display: inline-block;
+
+            padding: 0 30px;
+
+            font-size: 16px;
+        }
+
+        .content_1 {
+            max-width: 1200px;
+            background: white;
+            margin: 0 auto;
+
+            font-size: 16px;
+
+            text-align: center;
+        }
+
+        .content_2 {
+            max-width: 1200px;
+            height: 530px;
+            background: #f9f9f9;
+            margin: 0 auto;
+
+            font-size: 16px;
+
+            text-align: center;
+        }
+
+
+        .content_1  div img {
+            cursor: pointer;
+        }
+
+        /* ############################################播放器样式############################################ */
+        .music_1 {
+            display: inline-block;
+
+            width: 396px;
+
+            transition: all .5s;
+        }
+
+        .music_1>div {
+            padding: 40px;
+        }
+
+        .music_1 div div:first-child {
+            overflow: hidden;
+        }
+
+        .music_1 h2 {
+            height: 40px;
+            margin: 20px 0;
+        }
+
+        .music_1:hover {
+            background: #f2f2f2;
+        }
+
+        #music_pre {
+            background-image: url("../images/上一首_later.png");
+            background-repeat: no-repeat;
+
+        }
+
+
+        #music_pre:hover {
+            background-image: url("../images/上一首.png");
+            background-repeat: no-repeat;
+        }
+
+
+        #music_next {
+            background-image: url("../images/下一首_later.png");
+            background-position-x: 40%;
+            background-repeat: no-repeat;
+        }
+
+        #music_next:hover {
+            background-image: url("../images/下一首.png");
+            background-repeat: no-repeat;
+        }
+
+        #music {
+            width: fit-content;
+            margin: auto;
+        }
+
+        audio {
+            position: fixed;
+            top: 0;
+
+            width: 1300px;
+            margin-left: -650px;
+        }
+
+        #play_music {
+            z-index: 3;
+            position: fixed;
+            bottom: 0;
+
+            width: 100%;
+            height: 78px;
+            background: white;
+            border-top: #f9f9f9 4px solid;
+            /* background: #2f2f2f; */
+            /* background: #17103a; */
+
+            box-shadow: 0 3px 15px gray;
+            user-select: none;
+            opacity: .95;
+        }
+
+        #play_music>div {
+            padding-top: 5px;
+        }
+
+        #play_music>div>div>div {
+            display: inline-block;
+        }
+
+        #play_music img {
+            width: 50px;
+        }
+
+        #ctrl_left {
+            margin-left: 8%;
+        }
+
+        #ctrl_left li {
+            display: inline-block;
+
+            width: 50px;
+            height: 50px;
+            padding: 0 5px;
+
+            cursor: pointer;
+        }
+
+        #progress {
+            position: relative;
+
+            width: 700px;
+            height: 10px;
+            background: grey;
+            border: 2px white solid;
+
+            border-radius: 5px;
+        }
+
+        #lump {
+            position: absolute;
+            bottom: -115%;
+
+            width: 30px;
+            height: 30px;
+            background-image: url("../images/lump_bg.png");
+            background-size: 40px 40px;
+            border: black 2px solid;
+            background-color: palegreen;
+            background-position: 50%;
+
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #point {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+
+            width: 10px;
+            height: 10px;
+            background: white;
+            border: black 2px solid;
+            margin: auto;
+
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        #progress_move {
+            position: absolute;
+
+            width: 0px;
+            height: 100%;
+            background: #08b9af;
+
+            border-radius: 2px;
+        }
+
+
+        #music_time {
+            width: 100%;
+            padding-top: 4px;
+
+            text-align: center;
+        }
+
+
+        #ctrl_right {
+            vertical-align: super;
+        }
+
+
+        #ctrl_right img {
+            width: 50px;
+        }
+
+
+        #ctrl_right div {
+            display: inline-block;
+        }
+
+        #sound_progress {
+            position: relative;
+            bottom: 10px;
+
+            width: 200px;
+            height: 9px;
+            background: #f2f2f2;
+            border: 2px solid black;
+
+            vertical-align: super;
+
+            border-radius: 5px;
+        }
+
+        #sound_lump {
+            position: absolute;
+            bottom: -176%;
+            left: 0;
+
+            width: 21px;
+            height: 48px;
+            background-image: url("../images/sound.png");
+
+            cursor: pointer;
+        }
+
+
+        #sound_move {
+            position: absolute;
+            left: 0;
+
+            height: 9px;
+            background: #fbe03b;
+        }
+
+        #play_way_btn{
+            width: 75px;
+            height: 50px;
+            background-image: url(../images/循环.svg);
+            
+            cursor: pointer;
+            
+        }
+
+
+        #play_music #play_menu {
+            position: absolute;
+            left: 25%;
+            bottom: 105%;
+
+            width: 980px;
+            height: 0px;
+            background: white;
+            border: 4px solid #c7c7c7;
+            border-bottom: none;
+
+            transition: all .5s;
+            opacity: .98;
+        }
+
+        #sound_menu {
+            margin: 0 10px;
+
+            cursor: pointer;
+        }
+
+
+        #sound_menu {
+            width: 50px;
+            height: 50px;
+            background-image: url("../images/menu_1.png");
+        }
+
+        #sound_volume>div:first-child {
+            width: 58px;
+            height: 50px;
+            background-image: url("../images/sound_1.png");
+        }
+
+
+        #sound_volume>div:first-child:hover {
+            background-image: url("../images/sound_2.png");
+
+            cursor: pointer;
+        }
+
+
+        #menu_context {
+            width: 100%;
+
+            text-align: center;
+        }
+
+
+        #menu_header {
+            width: 100%;
+            height: 60px;
+        }
+
+
+        #menu_header>div{
+            display: inline-block;
+
+            margin-top: 15px;
+
+            font-size: 25px;
+            font-weight: bold;
+
+            text-align: center;
+        }
+
+
+        #menu_header>div:first-child{
+            width: 54%;
+        }
+
+        #menu_header>div:last-child{
+            width: 45%;
+        }
+
+
+        #menu_left {
+            display: inline-block;
+
+            width: 55%;
+            height: 295px;
+            background: #cccccc;
+
+            vertical-align: top;
+        }
+
+        #menu_right {
+            display: inline-block;
+            overflow: auto;
+
+            width: 105%;
+            height: 285px;
+            background: grey;
+            border-top: 10px solid gray;
+        }
+
+
+        #menu_right_f {
+            display: inline-block;
+            overflow: hidden;
+
+            width: 40%;
+            height: 300px;
+        }
+
+
+        #song_data {
+            width: 100%;
+            height: 25px;
+
+            text-align: center;
+        }
+
+
+        #my_love {
+            width: 50px;
+            height: 50px;
+            background-image: url("../images/love.png");
+            margin: 0 5px;
+        }
+
+        .music_box {
+            position: relative;
+
+            width: 250px;
+            height: 250px;
+            margin-left: 100px;
+            margin-top: 20px;
+
+            cursor: pointer;
+        }
+
+        .front_box,
+        .back_box {
+            z-index: 2;
+            position: relative;
+
+            width: 250px;
+            height: 250px;
+            background-color: rgba(255, 255, 255, 0.8);
+            background-image: url("../images/box_cover.png");
+            background-size: 70%;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            
+            transition: transform .3s;
+            border-radius: 10px;
+        }
+
+        .back_box {
+            z-index: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            box-shadow: 0 20px 30px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        
+        .disc {
+            z-index: 1;
+            position: absolute;
+            overflow: hidden;
+            top: 20px;
+            left: 20px;
+
+            width: 210px;
+            height: 210px;
+            border: #fe3982 solid 4px;
+            background-color: #333;
+            background-position: center center;
+
+            transition: all .3s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+        }
+
+        .disc:before,
+        .disc:after {
+            position: absolute;
+
+            width: 10px;
+            height: 0;
+            border-bottom: 140px solid rgba(255, 255, 255, 0.1);
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+
+            content: " ";
+        }
+
+        .disc:before {
+            left: 0;
+            right: 0;
+            top: 50%;
+
+            margin: auto;
+        }
+
+        .disc:after {
+            left: 0;
+            right: 0;
+
+            margin: auto;
+
+            transform: rotate(180deg);
+        }
+
+        .hole {
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+
+            width: 100px;
+            height: 100px;
+            background-color: #fe3982;
+            margin: auto;
+
+            border-radius: 50%;
+        }
+
+        .hole:before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+
+            width: 40px;
+            height: 40px;
+            background-color: #efefef;
+            margin: auto;
+            
+            border-radius: 50%;
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+            content: " ";
+        }
+
+
+        .box_after {
+            transform: translateX(-100px);
+        }
+
+        .disc_after {
+            transform: translateX(100px) rotate(380deg);
+        }
+
+        .ctrl{
+            z-index: 5;
+            position: relative;
+
+            background: white;
+            height: 80px;
+
+            text-align: center;
+        }
+
+        /* ############################################页脚样式######################################### */
+        #bottom {
+            height: 200px;
+            padding: 30px 0 110px 0;
+            background: #08b9af;
+
+            color: black;
+        }
+
+        #bottom_context {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        #bottom_l {
+            width: 520px;
+        }
+
+        #bottom_l ul li {
+            display: inline-block;
+
+            padding: 5px 5px;
+            border-right: #2f2f2f 3px solid;
+
+            font-size: 16px;
+        }
+
+        #bottom_r {
+            width: 330px;
+        }
+
+        /* ###########################################图片样式############################################ */
+
+        img {
+            transition: all .5s;
+            border-radius: 10px;
+        }
+
+        img:hover {
+            /* transform: scale(1.1); */
+            opacity: .9;
+        }
+
+        /* ################################################################################################# */

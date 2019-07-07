@@ -1,0 +1,256 @@
+    #QG_community {
+        background: #f6f6f6;
+        border: 1px #f6f6f6 solid;
+    }
+
+    #cm_header {
+        height: 150px;
+        background: white;
+        border: 1px solid white;
+
+        box-shadow: 5px 0 6px gray;
+    }
+
+    #cm_header_1 {
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 37px;
+
+        text-align: center;
+    }
+
+    #cm_header_1>div:first-child {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    #cm_header_1 button {
+        border: none;
+        border: #5909c2 4px solid;
+        padding: 5px 15px;
+        background: white;
+        
+        font-weight: bolder;
+        font-size: 20px;
+        color: #5909c2;
+        
+        cursor: pointer;
+        transition: .5s;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    #cm_header_1 button:hover {
+        background: #efe7f8;
+    }
+
+    #cm_context {
+        width: 1000px;
+        margin: 30px auto;
+    }
+
+    #cm_context header>div {
+        display: inline-block;
+    }
+
+    #cm_context article {
+        border: 2px solid gray;
+
+        box-shadow: 3px 3px 0px 0px black;
+    }
+
+    .personal_text {
+        width: 200px;
+    }
+
+    article {
+        padding: 20px 20px;
+        margin: 30px 0;
+        background: white;
+    }
+
+    #cm_context article footer ul li {
+        display: inline-block;
+
+        padding: 5px 20px;
+        margin: 10px 15px;
+        border: 3px solid #5909c2;
+        background-color: #5909c2;
+        
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+
+        border-radius: 5px;
+        transition: .5s;
+    }
+
+    #cm_context article footer ul li:first-child {
+        margin-left: 0;
+    }
+
+    #cm_context article footer ul li+li~li {
+        float: right;
+    }
+
+
+    #cm_context article footer ul li:hover {
+        border: 3px solid #5909c2;
+        background-color: white;
+
+        color: #5909c2;
+    }
+
+    .article_time {
+        margin: 10px 0;
+
+        color: gray;
+    }
+
+
+    .article_context {
+        margin: 10px 0;
+    }
+
+
+    #cm_context article footer ul li a {
+        color: inherit;
+
+    }
+
+    .article_name {
+        font-weight: bold;
+    }
+
+
+    #edit {
+        background: white;
+        border: 2px solid gray;
+
+        box-shadow: 3px 3px 0px 0px black;
+    }
+
+
+    #edit header{
+        padding: 15px;
+    }
+    
+
+    #edit_tool {
+        height: 50px;
+        border-top: 1px silver solid;
+        border-bottom: 1px silver solid;
+
+    }
+
+
+
+    #edit_tool  button{
+        width: 30px;
+        height: 30px;
+        margin: 12px;
+        border: none;
+        background-size: 30px;
+        background-color: white;
+
+        outline: none;
+        cursor: pointer;
+    }
+
+    #edit_tool  button:first-child{
+        background-image: url(../images/textBtn/加粗.svg);
+        
+    }
+
+    #edit_tool  button:nth-child(2){
+        background-image: url(../images/textBtn/斜体.svg);
+    }
+
+    #edit_tool  button:nth-child(3){
+        background-image: url(../images/textBtn/大标题.svg);
+    }
+
+    #edit_tool  button:nth-child(4){
+        background-image: url(../images/textBtn/字体划线.svg);
+    }
+
+    #edit_tool  button:nth-child(5){
+        background-color: #ef3b7c;
+        border: 2px black solid;
+        margin: 0;
+    }
+
+    #edit_tool  button:nth-child(6){
+        background-color: #5909c2;
+        border: 2px black solid;
+        margin: 0;
+    }
+
+    #edit_tool  button:nth-child(7){
+        background-color: #08b9af;
+        border: 2px black solid;
+        margin: 0;
+    }
+    
+    #edit_tool  button:nth-child(8){
+        background-color: #67cbe2;
+        border: 2px black solid;
+        margin: 0;
+    }
+    
+    #edit_tool  button:nth-child(9){
+        background-color: #fbe03b;
+        border: 2px black solid;
+        margin: 0;
+    }
+
+
+    #edit_context{
+        min-height: 250px;
+        padding: 12px 20px;
+    }
+
+    #editing{
+        min-height: 150px;
+
+        outline: none;
+        cursor: text;
+    }
+
+    .e_tips::before{
+        content: "写分享...";
+    }
+
+    .a::before{
+        content: "";
+    }
+
+
+    #edit footer button{
+        float:right;
+
+        border: none;
+        border: #5909c2 4px solid;
+        padding: 5px 15px;
+        margin: 15px;
+        background: white;
+
+        font-size: 20px;
+        font-weight: bolder;
+        color: #5909c2;
+        
+        cursor: pointer;
+        outline: none;
+        transition: .5s;
+        border-radius: 5px;
+    }
+
+    #edit footer {
+        height: 74px;
+    }
+
+
+    #edit footer button:hover{
+        background:#efe7f8;
+    }
+

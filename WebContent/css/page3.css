@@ -1,0 +1,98 @@
+    #my_music {
+        width: 900px;
+        height: 1000px;
+        border: 4px solid #ffea3b;
+        margin: 50px auto;
+    
+    }
+
+    #user_news>div {
+        width: 800px;
+        height: 300px;
+        padding: 40px;
+        margin: 0 auto;
+    }
+
+    #user_news>div>div {
+        display: inline-block;
+
+        width: 300px;
+        padding-top: 36px;
+
+        text-align: center;
+    }
+
+
+    #user_news>div>div:first-child {
+        padding: 3px;
+        border: 7px black solid;
+
+        vertical-align: top;
+    }
+
+    #my_music_start{
+        display: inline-block;
+
+        background: red;
+        padding: 10px 30px ;
+        border:  red 4px solid;
+        
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        
+        cursor: pointer;
+        transition: all .5s;
+        border-radius: 14px;
+    }
+
+
+    #my_music_start:hover{
+        background: white;
+        border: red 4px solid;
+
+        color: red;
+    }
+
+    table {
+        margin: 0 auto;
+        border: 2px black solid;
+        border-collapse: collapse;
+    }
+
+    th{
+        width: 220px;
+
+        text-align: left;
+    }
+
+    tr{
+        border: 1px black solid;
+    }
+
+    thead tr {
+        height: 60px;
+    }
+
+    thead tr th {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    tr th:first-child{
+        width: 80px;
+        
+        cursor: pointer;
+    }
+
+    .evenrowcolor{
+        background-color: #ea2a6c;
+    }
+
+    .oddrowcolor{
+        background: #f1f1f1;
+    }
+
+
+
+

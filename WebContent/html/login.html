@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="icon" href="../images/login/qg页面_logo.png" type="image/x-icon" />
+	<title>QG | 工作室</title>
+	<script src="../js/login.js"></script>
+	<script src="../js/ajax.js"></script>
+</head>
+
+<body class="background">
+	<div class="han">
+		<div id="header_1">QG Music</div>
+		<div class="main">
+			<nav id="nav" class="tab1">
+				<div id="mimalogin">密码登录</div>
+				<div id="duanxinlogin">短信登录</div>
+				<div id="QRlogin"><img src="../images/login/右上角二维码.png" alt="二维码登录" id="QRC"></div>
+			</nav>
+			<div class="hr1 tab1"></div>
+
+			<div class="tab tab1">
+				<div class="inmain_1">
+					<div id="div_1">
+						<div class="user">
+							<span id="login1_1" class=".cursor_text">电子邮件地址或用户名</span>
+							<input type="text" name="user" id="user">
+						</div>
+						<div id="borderuser1">
+							<div class="jiantou">
+								<em></em><span></span>
+							</div>
+							*请输入用户名*
+						</div>
+						<div id="borderuser2">
+							<div class="jiantou">
+								<em></em><span></span>
+							</div>
+							*请输入密码*
+						</div>
+						<div class="password">
+							<span id="login2_1" class=".cursor_text">密码</span>
+							<input type="password" name="password" id="password" value="">
+							<div id="hiddenpassword_">
+								<img src="../images/login/隐藏on.png" alt="隐藏" id="hiddenpassword">
+							</div>
+						</div>
+						<div><input type="submit" name="submit_1" value="登录" id="submit_1"></div>
+						<div id="under">
+							<div class="under_left">
+								<input type="checkbox" value="remember" class="remember" />
+								<label for="remember">下次自动登录</label>
+							</div>
+							<div class="forget">
+								忘记密码
+							</div>
+							<div class="sign">
+								注册
+							</div>
+						</div>
+
+						<div id="more"> &nbsp;更多登录方式&nbsp; </div>
+						<div id="login_img">
+							<img id="imageslogin1" src="../images/login/imageslogin1.svg">
+							<img id="imageslogin2" src="../images/login/imageslogin2.svg">
+							<img id="imageslogin3" src="../images/login/imageslogin3.svg">
+							<img id="imageslogin4" src="../images/login/imageslogin4.svg">
+							<img id="imageslogin5" src="../images/login/imageslogin5.svg">
+							<img id="imageslogin6" src="../images/login/imageslogin6.svg">
+							<img id="imageslogin7" src="../images/login/imageslogin7.svg">
+							<img id="imageslogin8" class="show_1" src="../images/login/imageslogin8.svg">
+							<img id="imageslogin9" class="show_1" src="../images/login/imageslogin9.svg">
+							<img id="imageslogin10" class="show_1" src="../images/login/imageslogin10.svg">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab tab2">
+				<nav id="nav">
+					<div id="QRheader">微信二维码登录</div>
+					<div id="PClogin"><img src="../images/login/电脑1.png" alt="电脑登录" id="PC"></div>
+				</nav>
+				<div class="hr1"></div>
+				<div id="QRlogin_">
+					<img src="../images/login/二维码登录.png" alt="二维码">
+				</div>
+				<div id="miaoshu">
+					请使用微信扫描上方"二维码"登录
+				</div>
+			</div>
+
+
+			<div class="tab tab3">
+				<div class="inmain_1">
+					<form method="post" action="##">
+						<div class="user">
+							<span id="login3_1" class=".cursor_text">请输入手机号</span>
+							<input type="text" name="tel" id="tel">
+						</div>
+
+						<!-- 滑动验证 -->
+						<div id="box" class="tab3">
+							<div class="btn">》</div>
+							<p class="text">拖动滑块验证</p>
+							<div class="bg"></div>
+						</div>
+
+						<div id="sendCAP">
+							<input type="text" id="CAP">
+							<div id="CAPbtn">发送验证码</div>
+						</div>
+						<div class="submit"><input type="submit" name="submit_2" value="登录" id="submit_2"
+								onclick="return false;"></div>
+						<div id="under" class="under">
+							<div>
+								<input type="checkbox" value="remember" id="remember" />
+								<label for="remember">下次自动登录</label>
+								<div class="forget">
+									忘记密码
+								</div>
+								<div class="sign">
+									注册
+								</div>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="tab tab4">
+				<div class="inmain_1">
+					<div id="tab4">
+						<div class="user sign_user">
+							<input type="text" name="username_register" placeholder="请输入用户名" id="user4">
+							<div id="sign_user1">该用户名可以使用</div>
+						</div>
+						<div class="password">
+							<input type="password" name="password" placeholder="请设置密码" id="signpassword1"
+								spellcheck="false">
+							<div id="required">密码须为8-20位的数字字母组合,且必须有大写字母和特殊字符</div>
+							<div id="warning">!密码不合要求!</div>
+							<div id="pass" style="display:none">密码符合</div>
+							<input type="password" name="password_register" placeholder="请再输入一次密码" id="signpassword2">
+							<div id="repeat">!两次输入的密码不一致!</div>
+						</div>
+
+						<!-- 滑动验证 -->
+						<div id="test_drag">
+							<div id="test_bg"></div>
+							<div id="test_text">请拖动滑块验证</div>
+							<div id="test_btn">》</div>
+						</div>
+
+						<input type="checkbox" value="yes_1" id="yes" />
+						<label for="yes">我已阅读并接受用户协议</label>
+						<div><input type="button" name="submit_3" value="注册" id="submit_3"></div>
+					</div>
+				</div>
+			</div>
+			<div id="reminder"></div>
+
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,756 @@
+﻿		body {
+			margin: 0;
+			background-color: #5b2c90;
+			background-image: url(../images/login/背景图.png);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: 90%;
+		}
+
+		::-webkit-scrollbar {
+			display: none;
+		}
+
+		html {
+			font-size: .625em;
+		}
+
+		*::Selection {
+			background: #7c65e9;
+			color: #FFF;
+		}
+
+		.han {
+			display: flex;
+			flex-wrap: wrap;
+
+			height: 740px;
+			margin: 0;
+		}
+
+		#header_1 {
+			width: 100%;
+
+			font-size: 13rem;
+			font-weight: bold;
+			font-family: "Aharoni";
+			color: white;
+
+			line-height: 200px;
+			vertical-align: bottom;
+			text-align: center;
+		}
+
+		.main {
+			width: 454px;
+			height: 540px;
+			margin: auto;
+			background-color: white;
+
+			opacity: 0.8;
+			box-shadow: 2px 2px 15px black;
+			border-radius: 4px;
+		}
+
+		.inmain_1 {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		#inmain_2 {
+			position: relative;
+
+			color: red;
+		}
+
+
+		#div_1 {
+			position: relative;
+		}
+
+
+		.header {
+			width: 24rem;
+
+			text-align: center;
+		}
+
+		.fenge {
+			border-top: 1px grey solid;
+		}
+
+		.user {
+			position: relative;
+
+		}
+
+		#user {
+			margin-top: 38px;
+		}
+
+		#user4 {
+			margin-bottom: -1rem;
+		}
+
+		.sign_user {
+			height: 80px;
+			margin-bottom: 2%;
+		}
+
+		.user input {
+			width: 315px;
+			height: 35px;
+			padding: 10px 35px;
+			margin-bottom: 2rem;
+			margin-top: 10%;
+			border: 2px grey solid;
+
+			font-size: 2rem;
+
+			border-radius: 4px;
+			outline: none;
+		}
+
+		#tab4 div input {
+			margin-top: 3%;
+		}
+
+		.password {
+			position: relative;
+		}
+
+		.password input {
+			width: 315px;
+			height: 35px;
+			padding: 10px 35px;
+			border: 2px grey solid;
+
+			font-size: 2rem;
+
+			border-radius: 4px;
+			outline: none;
+		}
+
+		#submit_1 {
+			width: 389px;
+			height: 38px;
+			margin-top: 5%;
+			padding: 0;
+			border: 0;
+			
+			font: 2rem;
+			font-weight: bold;
+			font-size: 2em;
+			color: white;
+
+			border-radius: 4px;
+			outline: none;
+			cursor: pointer;
+		}
+
+		#submit_2 {
+			width: 389px;
+			height: 38px;
+			margin-top: 5%;
+			padding: 0;
+			border: 0;
+
+			font: 2rem;
+			font-size: 2em;
+			font-weight: bold;
+			color: white;
+
+			cursor: pointer;
+			border-radius: 4px;
+			outline: none;
+		}
+
+
+		#submit_3 {
+			width: 389px;
+			height: 38px;
+			padding: 0;
+			margin-top: 5%;
+			border: 0;
+
+			font: 2rem;
+			font-size: 2em;
+			font-weight: bold;
+			color: white;
+
+			outline: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.hr1 {
+			height: 1rem;
+			border-top: #bbb 1px solid;
+		}
+
+		#nav div {
+			display: inline-block;
+
+			margin-left: 5%;
+			padding: 10px;
+			border: 0px solid transparent;
+
+			font-size: 2rem;
+			font-weight: bold;
+
+			vertical-align: middle;
+
+			cursor: pointer;
+		}
+
+		#nav #QRheader {
+			cursor: default;
+		}
+
+
+		#nav #mimalogin:hover {
+			border-bottom: 3px darkorchid solid;
+		}
+
+
+		#nav #duanxinlogin:hover {
+			border-bottom: 3px darkorchid solid;
+		}
+
+		.han div #QRlogin {
+			padding-top: 2px;
+			padding-right: 0;
+			margin-left: 26%;
+
+			text-align: right;
+		}
+
+		#div_1 div {
+			text-align: center;
+		}
+
+		#under {
+			text-align: left;
+		}
+
+		#div_1 #under div {
+			display: inline-block;
+
+			text-align: left;
+		}
+
+		#under {
+			margin-top: 3%;
+		}
+
+		.under{
+			display: inline-block;
+		}
+
+		.forget {
+			display: inline-block;
+
+			margin-left: 190px;
+
+			cursor: pointer;
+		}
+
+		#forget:after {
+			content: " | ";
+		}
+
+		.sign {
+			display: inline-block;
+
+			cursor: pointer;
+		}
+
+
+		#borderuser1 {
+			display: none;
+			position: absolute;
+			left: -255px;
+			bottom: 254px;
+
+			width: 200px;
+			height: 50px;
+			background-color: transparent;
+			border: 3px solid #00f1a4;
+
+			font-weight: bold;
+			font-size: 2rem;
+			color: #00f1a4;
+
+			line-height: 3.8rem;
+			text-align: center;
+
+			border-radius: 8px;
+			opacity: 0;
+		}
+
+
+		#borderuser2 {
+			display: none;
+			position: absolute;
+			left: -255px;
+			bottom: 171px;
+
+			width: 200px;
+			height: 50px;
+			border: 3px solid #00f1a4;
+			background-color: transparent;
+
+			font-size: 2rem;
+			font-weight: bold;
+			color: #00f1a4;
+
+			text-align: center;
+			line-height: 3.7rem;
+
+			border-radius: 8px;
+			opacity: 0;
+		}
+
+		.jiantou {
+			position: absolute;
+			left: 200px;
+			bottom: 0px;
+
+			width: 40px;
+			height: 40px;
+		}
+
+		.jiantou * {
+			display: block;
+			position: absolute;
+
+			border-width: 15px;
+			border-style: dashed dashed dashed solid;
+
+			font-size: 0;
+
+			line-height: 0;
+		}
+
+		.jiantou em {
+			border-color: transparent transparent transparent #00f1a4;
+		}
+
+		.jiantou span {
+			border-color: transparent transparent transparent #8560c4;
+			left: -7px;
+		}
+
+		#nav #PClogin {
+			margin-left: 39%;
+		}
+
+		.tab2 {
+			display: none;
+		}
+
+		.tab3 {
+			display: none;
+		}
+
+		.tab4 {
+			display: none;
+		}
+
+		#tab4 {
+			text-align: center;
+		}
+
+		#hiddenpassword_ {
+			position: relative;
+			left: 0;
+			top: 0;
+
+			cursor: pointer;
+		}
+
+
+		#hiddenpassword {
+			position: absolute;
+			left: 338px;
+			top: -48px;
+		}
+
+
+		#QRlogin_ {
+			margin-top: 8%;
+
+			text-align: center;
+		}
+
+		#miaoshu {
+			color: gray;
+
+			text-align: center;
+		}
+
+
+
+		#required {
+			display: none;
+
+			font-size: 1.4rem;
+			color: grey;
+		}
+
+
+		#repeat {
+			display: none;
+
+			font-size: 1.4em;
+		}
+
+		#warning {
+			display: none;
+
+			font-size: 1.4rem;
+			color: red;
+		}
+
+		#pass {
+			display: none;
+
+			margin-top: 2%;
+
+			font-size: 1.5em;
+			color: #00f1a4;
+		}
+
+
+
+
+		#sign_user1 {
+			display: none;
+
+			margin-top: 3.5%;
+
+			font-size: 1.5em;
+			color: #00f1a4;
+
+		}
+
+		#login1_1 {
+			position: absolute;
+			bottom: 42px;
+			left: 35px;
+
+			padding: 0 4px 0 4px;
+			background-color: #fff;
+
+			font-size: 2em;
+			color: grey;
+
+			transition: all .2s;
+			user-select: none;
+		}
+
+		#login1_1.login1_2 {
+			bottom: 72px;
+			left: 16px;
+
+			font-size: 1.5em;
+			color: purple;
+		}
+
+		#login1_1.login1_3 {}
+
+
+		#login2_1 {
+			position: absolute;
+			bottom: 20px;
+			left: 35px;
+
+			background-color: #fff;
+			padding: 0 4px 0 4px;
+
+			font-size: 2em;
+			color: grey;
+
+			user-select: none;
+			transition: all .2s;
+		}
+
+		#login2_1.login2_2 {
+			bottom: 50px;
+			left: 20px;
+
+			font-size: 1.5em;
+			color: purple;
+		}
+
+		#login2_1.login2_3 {}
+
+
+
+		#login3_1 {
+			position: absolute;
+			bottom: 43px;
+			left: 35px;
+			
+			background-color: #fff;
+			padding: 0 4px 0 4px;
+
+			font-size: 2em;
+			color: grey;
+
+			user-select: none;
+			transition: all .2s;
+		}
+
+		#login3_1.login3_2 {
+			bottom: 73px;
+			left: 18px;
+
+			font-size: 1.5em;
+			color: purple;
+		}
+
+		#login3_1.login3_3 {}
+
+		#signpassword2 {
+			margin-top: 17px;
+			margin-bottom: 17px;
+		}
+
+
+
+		#repeat {
+			color: red;
+		}
+
+
+
+		#more {
+			margin-top: 3%;
+
+			font-size: 1.5rem;
+
+			text-align: center;
+		}
+
+		#more::before {
+			color: #d9d9d9;
+
+			content: "————————";
+		}
+
+
+		#more::after {
+			color: #d9d9d9;
+
+			content: "————————";
+		}
+
+
+		img:hover {
+			opacity: 0.7;
+			filter: alpha(opacity=70);
+		}
+
+
+		#login_img {
+			margin-top: 4%;
+
+			text-align: center;
+		}
+
+		#login_img img {
+			width: 30px;
+
+			cursor: pointer;
+		}
+
+		.show_1 {
+			display: none;
+		}
+
+		#box {
+			position: relative;
+
+			width: 389px;
+			height: 40px;
+			background: #ccc;
+
+			border-radius: 4px;
+		}
+
+		#box .btn {
+			z-index: 3;
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			width: 40px;
+			height: 40px;
+			border: 1px solid #eee;
+			background: #fff;
+
+			font-size: 30px;
+
+			text-align: center;
+			line-height: 36px;
+
+			cursor: pointer;
+			user-select: none;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		
+		#box .bg {
+			z-index: 1;
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			width: 0;
+			height: 100%;
+			background: #b075f7;
+
+			border-radius: 4px;
+		}
+
+		#box .text {
+			z-index: 2;
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			width: 100%;
+			height: 100%;
+			margin: 0;
+
+			font-size: 28px;
+
+			line-height: 38px;
+			text-align: center;
+
+			user-select: none;
+		}
+
+
+		#sendCAP {
+			display: none;
+
+			margin-top: 5%;
+		}
+
+		#CAP {
+			display: inline-block;
+
+			width: 145px;
+			height: 35px;
+			border: grey 2px solid;
+
+			font-size: 20px;
+
+			border-radius: 3px;
+		}
+
+		#CAPbtn {
+			display: inline-block;
+
+			height: 35px;
+			width: 90px;
+			
+			font-weight: bold;
+			
+			line-height: 37px;
+
+			border-radius: 4px;
+		}
+
+		.jia1 {
+			cursor: pointer;
+		}
+
+		.jia1:hover {
+			background-color: #03bc81;
+		}
+
+		.jia2 {
+
+		}
+
+
+		#yes {
+			margin-top: 3%;
+		}
+
+		#reminder {
+			display: none;
+			position: absolute;
+			left: 2370px;
+			bottom: 815px;
+
+			width: 450px;
+			height: 120px;
+			background-color: red;
+
+			transition: all .7s;
+		}
+
+
+		.bigger {
+			font-size: 3em;
+		}
+
+
+		.under_left{
+			display: inline-block;
+		}
+
+
+
+		#test_drag {
+			position: relative;
+			
+            width: 389px;
+            height: 40px;
+			margin: 0 auto;
+			background-color: #e8e8e8;
+			
+            line-height: 40px;
+        }
+
+        #test_bg {
+			position: absolute;
+			
+            width: 40px;
+            height: 100%;
+            background-color: #8ed29a;
+        }
+
+        #test_text {
+			position: absolute;
+			
+            width: 100%;
+			height: 100%;
+			
+			text-align: center;
+			
+            user-select: none;
+        }
+
+        #test_btn {
+			position: absolute;
+			
+            width: 40px;
+            height: 38px;
+            border: 1px solid #ccc;
+			background-color: #fff;
+			
+			color: #666;
+			
+			text-align: center;
+            line-height: 38px;
+			
+            user-select: none;
+            cursor: move;
+        }

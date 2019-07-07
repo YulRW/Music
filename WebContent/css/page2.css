@@ -1,0 +1,70 @@
+        .nav {
+            width: 1300px;
+            margin: 0 auto;
+
+            text-align: center;
+        }
+
+        .nav ul {
+            font-size: 16px;
+            
+        }
+
+        h1{
+            padding-top: 30px;
+            margin-top: 0;
+        }
+
+        .nav li {
+            display: inline-block;
+
+            background: #c4c4c4;
+            padding: 7px 25px ;
+            margin:  0 10px;
+            border: 4px #c4c4c4 solid;
+
+            font-weight: bold;
+            color: white;
+
+            transition:  all .5s;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .nav li:hover {
+            background: transparent;
+
+            color: #c4c4c4;
+        }
+
+
+
+        .music_context{
+            display: none;
+
+            width: 1300px;
+            margin: 0 auto;
+            margin-top: 110px;
+        }
+
+        .music_context ul{
+            border: 1px #c4c4c4 solid;
+            padding-bottom: 70px;
+
+            text-align: center;
+        }
+
+        .music_context li{
+            display: inline-block;
+            
+            padding: 50px 50px;
+
+        }
+
+
+        .page_div:first-child+div{
+            background-image: url(../images/page2.png);
+            background-size: 1000px;
+        }
+
+
