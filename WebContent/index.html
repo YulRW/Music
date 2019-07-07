@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/page2.css">
+    <link rel="stylesheet" href="css/page3.css">
+    <link rel="stylesheet" href="css/page4.css">
+    <link rel="stylesheet" href="css/page5.css">
+    <link rel="icon" href="images/QGlogo.png" type="image/x-icon" />
+    <script src="js/main_1.js"></script>
+    <script src="js/lyrics.js"></script>
+    <script src="js/play.js"></script>
+    <script src="js/rotation_chart.js"></script>
+    <script src="js/page2.js"></script>
+    <script src="js/page3.js"></script>
+    <script src="js/page4.js"></script>
+    <script src="js/page5.js"></script>
+    <script src="js/ajax_main.js"></script>
+    <title>QG云音乐</title>
+</head>
+
+<body>
+
+    <!-- 模态框 -->
+    <div id="cover_bg">
+        <div id="windows_1">
+            <div></div>
+
+            <span id="close_w"></span>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <header id="top_1">
+        <div>
+            <ul id="page_ul">
+                <li title="logo"><a href="##"></a></li>
+                <li class="page_li"><a href="##">音乐世界</a></li>
+                <li class="page_li"><a href="##">发现音乐</a></li>
+                <li class="page_li"><a href="##">我的音乐</a></li>
+                <li class="page_li"><a href="##">QG社区</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li id="user"><a href="html/login.html" target="_blank"><img src="./images/用户.svg" alt="user"></a></li>
+                <li class="page_li"><a href="##">我的用户</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ***********************************************首页***************************************************** -->
+    <div>
+        <div class="page_div">
+            <div id="main_1">
+
+                <!-- 轮播图图片 -->
+                <div id="rotation_chart">
+                    <div id="main_rotation_chart">
+                        <ul>
+                            <li class="list1"><img src="images/a1.jpg" alt="1"></li>
+                            <li class="list2"><img src="images/a2.jpg" alt="2"></li>
+                            <li class="list3"><img src="images/a3.jpg" alt="3"></li>
+                            <li class="list4"><img src="images/a4.jpg" alt="4"></li>
+                            <li class="list5"><img src="images/a5.jpg" alt="5"></li>
+                            <li class="list6"><img src="images/a6.jpg" alt="6"></li>
+                            <li class="list7"><img src="images/a7.jpg" alt="7"></li>
+                        </ul>
+                    </div>
+                    <div id="btn_RC">
+                        <img src="./images/RC_L.png" alt="RC_L" id="RC_L">
+                        <img src="./images/RC_R.png" alt="RC_R" id="RC_R">
+                    </div>
+
+
+                    <!-- 轮播图按钮-->
+                    <div id="rotation_chart_btn">
+                        <span l_index_RC="0"></span>
+                        <span l_index_RC="1"></span>
+                        <span l_index_RC="2"></span>
+                        <span l_index_RC="3"></span>
+                        <span l_index_RC="4"></span>
+                        <span l_index_RC="5"></span>
+                        <span l_index_RC="6"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 搜索框 -->
+            <div id="search">
+                <div id="top_bg"></div>
+                <div id="search_1">
+                    <div id="search_2">
+                        <input type="text" name="search_music" placeholder="搜索歌曲" spellcheck="false" maxlength="10">
+                        <div id="search_1_run">
+                            <img src="images/搜索.svg" alt="search" id="search_2_run">
+                        </div>
+                    </div>
+                </div>
+                <div id="btm_bg"></div>
+                <div id="search_recommend">
+                    <div id="search_music">
+
+                        <!-- 搜索框轮播图 -->
+                        <div id="search_context">
+                            <div id="search_context_1">
+                                <ul>
+                                    <li class="s_list1"><img src="images/1.jpg" alt=""></li>
+                                    <li class="s_list2"><img src="images/1.jpg" alt=""></li>
+                                    <li class="s_list3"><img src="images/1.jpg" alt=""></li>
+                                    <li class="s_list4"><img src="images/1.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 搜索框按钮 -->
+                        <div id="search_button">
+                            <span l_index="0"></span>
+                            <span l_index="1"></span>
+                            <span l_index="2"></span>
+                            <span l_index="3"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_1">
+
+                <!-- 标题 -->
+                <div>
+                    <h1>热门推荐</h1>
+                </div>
+
+                <!-- 导航 -->
+                <div>
+                    <ul>
+                        <li><a href="##">最新</a></li>
+                        <li><a href="##">内地</a></li>
+                        <li><a href="##">港台</a></li>
+                        <li><a href="##">欧美</a></li>
+                        <li><a href="##">韩国</a></li>
+                        <li><a href="##">日本</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- 内容 -->
+
+                <div class="content_1">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ***********************************************page2***************************************************** -->
+
+        <div class="page_div">
+            <div class="nav">
+                <h1 id="nav_header_1">热门标签</h1>
+                <ul>
+                    <li class="music_page">华语</li>
+                    <li class="music_page">流行</li>
+                    <li class="music_page">摇滚</li>
+                    <li class="music_page">民谣</li>
+                    <li class="music_page">电子</li>
+                    <li class="music_page">轻音乐</li>
+                    <li class="music_page">影视原声</li>
+                    <li class="music_page">ACG</li>
+                    <li class="music_page">怀旧</li>
+                    <li class="music_page">治愈</li>
+                </ul>
+            </div>
+
+            <div class="music_context">
+                <ul>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                </ul>
+            </div>
+
+            <div class="music_context">
+                <ul>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                    <li><img src="./images/b2.jpg" alt="1"></li>
+                </ul>
+            </div>
+
+            <div class="music_context">
+                <ul>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                    <li><img src="./images/b3.jpg" alt="1"></li>
+                </ul>
+            </div>
+            <div class="music_context">
+                <ul>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                </ul>
+            </div>
+            <div class="music_context">
+                <ul>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                </ul>
+            </div>
+            <div class="music_context">
+                <ul>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                </ul>
+            </div>
+            <div class="music_context">
+                <ul>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                </ul>
+            </div>
+            <div class="music_context">
+                <ul>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                </ul>
+            </div>
+            <div class="music_context">
+                <ul>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                </ul>
+            </div>
+            <div class="music_context">
+                <ul>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                    <li><img src="./images/b1.jpg" alt="1"></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- ***********************************************page3***************************************************** -->
+
+        <div class="page_div">
+            <div id="my_music">
+                <div id="user_news">
+                    <div>
+                        <div><img src="./images/lovecover.png" alt="cover"></div>
+                        <div>
+                            <header>
+                                <h1>我喜欢的音乐</h1>
+                            </header>
+                            <div id="my_music_start">播放</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="love_music">
+
+                    <!-- 歌单头 -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>播放▶</th>
+                                <th>歌名</th>
+                                <th>时长</th>
+                                <th>歌手</th>
+                            </tr>
+                        </thead>
+
+                        <!-- 歌单 -->
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***********************************************page4***************************************************** -->
+        <div class="page_div">
+            <div id="QG_community">
+                <div id="cm_header">
+                    <div id="cm_header_1">
+                        <div>QG云社区,分享你的音乐~</div>
+                        <button>分享音乐</button>
+                    </div>
+                </div>
+                <div id="cm_context">
+
+                    <div id="edit">
+                        <header>
+                            <div><img src="./images/头像.jpg" alt="" width="38px"></div>
+                            <div class="personal_text">
+                                <div class="article_name">猴博士</div>
+                                <div>前端工程师</div>
+                            </div>
+                        </header>
+                        <div id="edit_tool">
+
+                            <button data-command="bold" title="加粗"></button>
+                            <button data-command="italic" title="斜体"></button>
+                            <button data-command="fontsize" data-value="6" title="一级标题"></button>
+                            <button data-command="strikeThrough" title="删除线"></button>
+                            <button data-command="forecolor" data-value="#ef3b7c" title="红"></button>
+                            <button data-command="forecolor" data-value="#5909c2" title="紫"></button>
+                            <button data-command="forecolor" data-value="#08b9af" title="青"></button>
+                            <button data-command="forecolor" data-value="#67cbe2" title="蓝"></button>
+                            <button data-command="forecolor" data-value="#fbe03b" title="黄"></button>
+                        </div>
+                        <div id="edit_context">
+                            <div id="editing" class="e_tips" contenteditable="true"></div>
+
+                        </div>
+                        <footer>
+                            <button id="post_html">提交分享</button>
+
+                        </footer>
+                    </div>
+
+                    <article>
+                        <header>
+                            <div><img src="./images/头像.jpg" alt="" width="38px"></div>
+                            <div class="personal_text">
+                                <div class="article_name">猴博士</div>
+                                <div>前端工程师</div>
+                            </div>
+                        </header>
+                        <div class="article_context">
+                            <font size="6" color="red">##儿时</font>
+                            <div>
+                                最近因为赵雷的走红，很多人开始爱上民谣了，歌手刘昊霖《儿时》这首歌也走红网络，刘昊霖儿时歌曲评价如何？”铁道旁赤脚追晚霞，玻璃珠铁盒英雄卡”歌词简单纯朴但又动人心弦，不少瓜友大赞《儿时》不输《成都》。
+                            </div>
+                            <div>第一次听到《儿时》这首歌，是在最近看的《鲁豫大咖一日行》采访汪峰那期的节目里面，当时汪峰像主持人鲁豫推荐了歌手刘昊霖、唐映枫，还用手机给她播放了一首歌，第一句歌词就是——
+                            </div>
+                            <div>铁道旁赤脚追晚霞</div>
+                            <div>玻璃珠铁盒英雄卡</div>
+                            <div>玩皮筋迷藏石桥下</div>
+                            <div>姥姥又纳鞋坐院坝</div>
+                            <div>听到这里，已经被这首歌打动了~</div>
+                            <div>后来去搜了一下刘昊霖的其他的歌，除了《儿时》，其他的也有很明显的小清新风格。</div>
+                            <div>然后，把这首歌推荐给了盆友，她表示很好听，估计这歌很快会火。不得不感叹，这就是宣传的效应啊~</div>
+                            <div>又听了刘昊霖的其他几首歌，发现风格和《儿时》很相近，包括《煎饼果子》《缝纫机》等等，不过那首《嫂子》却让我印象深刻，歌词戏谑当中带点幽默，挺好玩。</div>
+                            <div>
+                                有评论称刘昊霖的歌曲“既有城市民谣的清新，也有怀旧流行的沧桑，既有爵士蓝调的柔情，也有说唱摇滚的硬朗”，听过了一些歌曲发现，刘昊霖的唱腔和周杰伦很相似，他也演唱了很多中国风的歌曲。
+                            </div>
+                            <div><img src="./images/content/C1.jpg" alt="1"></div>
+                        </div>
+                        <div class="article_time">2019-05-13</div>
+                        <footer>
+                            <ul>
+                                <li><a href="##">赞同</a></li>
+                                <li><a href="##">反对</a></li>
+                                <li><a href="##">评论</a></li>
+                                <li><a href="##">收藏</a></li>
+                                <li><a href="##">分享</a></li>
+                            </ul>
+                        </footer>
+                    </article>
+
+                    <article>
+                        <header>
+                            <div><img src="./images/头像.jpg" alt="" width="38px"></div>
+                            <div class="personal_text">
+                                <div class="article_name">猴博士</div>
+                                <div>前端工程师</div>
+                            </div>
+                        </header>
+                        <div class="article_context">
+                            <font size="6" color="red">##龙卷风</font>
+                            <div>周杰伦把爱情比喻成龙卷风，我觉得特别贴切。因为很多人，像我，一辈子都没见过龙卷风。</div>
+                        </div>
+                        <div class="article_time">2019-05-13</div>
+                        <footer>
+                            <ul>
+                                <li><a href="##">赞同</a></li>
+                                <li><a href="##">反对</a></li>
+                                <li><a href="##">评论</a></li>
+                                <li><a href="##">收藏</a></li>
+                                <li><a href="##">分享</a></li>
+                            </ul>
+                        </footer>
+                    </article>
+
+                    <article>
+                        <header>
+                            <div><img src="./images/头像.jpg" alt="" width="38px"></div>
+                            <div class="personal_text">
+                                <div class="article_name">猴博士</div>
+                                <div>前端工程师</div>
+                            </div>
+                        </header>
+                        <div class="article_context">
+                            <font size="6" color="red">##当你老了</font>
+                            <div>“当你老了，我也老了，平行而进，平行而尽”。</div>
+                        </div>
+                        <div class="article_time">2019-05-13</div>
+                        <footer>
+                            <ul>
+                                <li><a href="##">赞同</a></li>
+                                <li><a href="##">反对</a></li>
+                                <li><a href="##">评论</a></li>
+                                <li><a href="##">收藏</a></li>
+                                <li><a href="##">分享</a></li>
+                            </ul>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***********************************************page5***************************************************** -->
+
+        <div class="page_div">
+            <div id="user_message">
+
+                <!-- 用户个人信息 -->
+                <div id="user_text">
+                    <div>
+                        <label for=""> 名称 : </label>
+                        <div class="input_txt">
+                            <input type="text" value="钢铁猩猩兽">
+                        </div>
+                    </div>
+                    <div>
+                        <label for=""> 性别 : </label>
+                        <div class="input_txt label_1">
+                            <label><input type="radio" value="0" name="sex">保密</label>
+                            <label><input type="radio" value="1" name="sex" checked="checked">男</label>
+                            <label><input type="radio" value="2" name="sex">女</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>城市 :</label>
+                        <div class="input_txt">
+                            <select>
+                                <option value="0">选择省份</option>
+                                <option value="1">北京</option>
+                                <option value="2">天津</option>
+                                <option value="3">河北</option>
+                                <option value="4">山西</option>
+                                <option value="5">内蒙古</option>
+                                <option value="6">辽宁</option>
+                                <option value="7" selected="selected">广东</option>
+
+                            </select>
+                            <select>
+                                <option value="0">选择城市</option>
+                                <option value="0" selected="selected">广州</option>
+                                <option value="0">深圳</option>
+                                <option value="0">东莞</option>
+                            </select>
+                            <select>
+                                <option value="0">选择区县</option>
+                                <option value="0">天河区</option>
+                                <option value="0">番禺区</option>
+                                <option value="0" selected="selected">白云区</option>
+                                <option value="0">花都区</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label>生日 :</label>
+                        <div class="input_txt">
+                            <select>
+                                <option value="0">年</option>
+                                <option value="1">1995</option>
+                                <option value="2">1996</option>
+                                <option value="3">1997</option>
+                                <option value="4">1998</option>
+                                <option value="5">1999</option>
+                                <option value="6">2000</option>
+                                <option value="7" selected="selected">2001</option>
+                            </select>
+                            <select>
+                                <option value="0">月</option>
+                                <option value="0" selected="selected">01</option>
+                                <option value="0">02</option>
+                                <option value="0">03</option>
+                            </select>
+                            <select>
+                                <option value="0">日</option>
+                                <option value="0">01</option>
+                                <option value="0">02</option>
+                                <option value="0" selected="selected">03</option>
+                                <option value="0">04</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="aboutme" id="sign_1">个性签名：</label>
+                        <div class="input_txt">
+                            <div>
+                                <textarea name="sign" cols="55" rows="7" placeholder="~介绍一下你自己吧~"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="save_message">保存</div>
+
+                </div>
+
+
+                <!-- 用户个人头像 -->
+                <div>
+                    <div id="head_sculpture">
+                        <img src="images/头像.jpg" alt="">
+                    </div>
+                    <div>点击更换头像</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ***********************************************页脚***************************************************** -->
+    <footer id="bottom">
+        <div id="bottom_context">
+            <div id="bottom_l">
+                <p>
+                    <ul>
+                        <li>关于QG音乐</li>
+                        <li>客户服务</li>
+                        <li>服务条款</li>
+                        <li>隐私政策</li>
+                        <li>版权投诉指引</li>
+                        <li>意见反馈</li>
+                    </ul>
+                </p>
+                <p>©1995-2004 Macromedia, Inc. All rights reserved.</p>
+                <p>©2004 Microsoft Corporation. All rights reserved.</p>
+                <p>Copyright © 2004 Adobe Systems Incorporated. All rights reserved.</p>
+                <p>©1995-2004 Eric A. and Kathryn S. Meyer. All Rights Reserved.</p>
+
+            </div>
+            <div id="bottom_r"></div>
+        </div>
+    </footer>
+    <!-- ***********************************************播放器***************************************************** -->
+    <div id="play_music">
+        <div>
+
+            <!-- 音乐菜单 -->
+            <div id="play_menu">
+                <a href="" id="skip"></a>
+
+                <!-- 菜单头 -->
+                <div id="menu_header">
+                    <div>音乐盒子</div>
+                    <div>歌词</div>
+                </div>
+
+                <!-- 菜单内容 -->
+                <div id="menu_context">
+                    <div id="menu_left">
+                        <div class="music_box">
+                            <div class="front_box">
+                            </div>
+                            <div class="disc">
+                                <div class="hole"></div>
+                            </div>
+                            <div class="back_box"></div>
+                        </div>
+                    </div>
+                    <div id="menu_right_f">
+                        <div id="menu_right">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="ctrl">
+                <!-- 左边控件 -->
+                <div id="ctrl_left">
+                    <ul>
+                        <li id="music_pre" title="上一首 (快捷键:←)"></li>
+                        <li id="start"><img src="images/播放.png" alt="play" id="play_btn" title="播放 (快捷键: 空格)"></li>
+                        <li id="music_next" title="下一首 (快捷键:→)"></li>
+                    </ul>
+                </div>
+
+                <!-- 中间控件 -->
+                <div id="ctrl_middle">
+
+                    <div id="song_data">
+                        <div>
+
+                        </div>
+                    </div>
+                    <div id="progress">
+
+                        <div id="progress_move"></div>
+                        <div id="lump">
+                            <div id="point"></div>
+                        </div>
+                    </div>
+                    <div id="music_time"></div>
+
+                </div>
+
+                <!-- 右边控件 -->
+                <div id="ctrl_right">
+                    <div id="sound_main">
+                        <div id="sound_volume">
+                            <div title="音量"></div>
+                            <div id="sound_progress">
+                                <div id="sound_move"></div>
+                                <div id="sound_lump"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="play_way_btn" title="循环"></div>
+                    <div id="sound_menu" title="菜单 (快捷键:M)"></div>
+                    <div id="my_love" title="收藏 (快捷键:L)"></div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 播放器 -->
+    <div id="music">
+        <audio preload id="audio">
+            <source src="resource/suyan.mp3">
+        </audio>
+    </div>
+
+</body>
+
+</html>
